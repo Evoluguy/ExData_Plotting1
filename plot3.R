@@ -1,3 +1,6 @@
+
+## Source data (household_power_consumption.txt) should be in the data directory of the current working directory where the R script is.
+
 rawfile <- file("./data/household_power_consumption.txt", "r")
 cat(grep("(^Date)|(^[1|2]/2/2007)",readLines(rawfile), value=TRUE), sep="\n", file="./data/filtered.txt")
 close(rawfile)
